@@ -1,0 +1,57 @@
+<div class="form-group row">
+
+    <label class="col-sm-2 col-form-label">Id</label>
+    <div class="col-sm-10 ">
+        <input type="text" class ="form-control"[(ngModel)]="sid"
+        placeholder="Enter student id">
+
+    </div>
+    <label class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+        <input type="text" class ="form-control"[(ngModel)]="sname"
+        placeholder="Enter student name">
+
+    </div>
+    <label class="col-sm-2 col-form-label">Date Of Birth</label>
+    <div class="col-sm-10">
+        <input type="date" class ="form-control"[(ngModel)]="sdob"
+        placeholder="Enter Date oF Birth">
+
+    </div>
+    
+    <label class="col-sm-2 col-form-label">Qualification</label>
+    <div class="col-sm-10">
+        <input type="text" class ="form-control"[(ngModel)]="squal"
+        placeholder="Enter qualification">
+
+    </div>
+    
+    <label class="col-sm-2 col-form-label">City</label>
+    <div class="col-sm-10">
+        <input type="text" class ="form-control"[(ngModel)]="scity"
+        placeholder="Enter city">
+
+    </div>
+    
+    <label class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+        <input type="email" class ="form-control"[(ngModel)]="semail"
+        placeholder="Enter email">
+
+    </div>
+    
+    <label class="col-sm-2 col-form-label">Phone no</label>
+    <div class="col-sm-10">
+        <input type="email" class ="form-control"[(ngModel)]="sphone"
+        placeholder="Enter Phone number">
+
+    </div>
+
+</div>
+<button (click)="addStudent()" *ngIf="stud.sid==0" class="btn btn-primary"> 
+    Add
+</button>
+
+<button (click)="updateStudent()" *ngIf="stud.sid!=0" class="btn btn-primary"> 
+    Update
+</button>
